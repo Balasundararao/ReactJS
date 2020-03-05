@@ -1,0 +1,44 @@
+@import './variables';
+@import './flexbox';
+//@use 'sass:map';
+
+.app_container {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.container-full{
+    width: $container-full;
+    height: 100%;
+    margin: $header-container-height+10 0 $footer-container-height+20 0;
+
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: $header-container-height+10 0 $footer-container-height+20 0;
+}
+
+@each $mtype, $width in $media_queries{
+    .row-#{$mtype}, .#{$mtype}{
+        width: $width;
+        margin: 10px auto;
+        @include flex_container($width, row, nowrap, left);
+    }
+}
+
+@mixin columns($width: 1200, $type: '-md', $col-list: $cols) {
+    @each  $col in $col-list{
+        .col#{$type}-#{$col}{
+            width:  ($width /12 ) *  $col;
+        }
+    }
+}
+  
+@include columns( 1200px, '',    $cols);
+@include columns( 1200px, '-lg', $cols);
+@include columns( 1600px, '-xl', $cols);
+@include columns( 992px,  '-md', $cols);
+@include columns( 768px,  '-sm', $cols);

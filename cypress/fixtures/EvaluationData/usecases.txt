@@ -1,0 +1,15 @@
+Whistler Perf Web - Evaluation page.
+H1 + P tag and text validations...pending
+Click on link to open the Evaluation Formpending
+Case1: Minimum 2columns required, Invalid Data, 1 column: invalid_1column.csvpending
+Case2: Invalid Data, 2 column with same data key set..: invalid_2col_samedata.csvpending
+Case3: Invalid Data, 2 column with same data key set..: invalid_2col_samedate.csvpending
+Case4: Maximum number of observations reached, more than 100 records..: maximum_data_more_100.csvpending
+Case5: Minimum number of observations required,.: minimum_data_less_6.csvpending
+Case6: Weekly Data Evaluation.....valid_data_week_19.csvpending
+Case7: Daily Data Evalutaion.....valid_data_day_18.csvpending
+Case8: Monthly Data Evalutaion.....valid_data_month_hour_100.csvpending
+Case9: Hourly Data Evalutaion.....valid_data_month_hour_100.csvpending
+Case10: validating day data with Hourly frequency, hour minimum requirement is 48, .....valid_data_day_18.csvpending
+Case11: Empty Rows with Comma seperated....,valid_data_few_emptypending
+

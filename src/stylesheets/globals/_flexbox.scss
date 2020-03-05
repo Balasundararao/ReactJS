@@ -1,0 +1,8 @@
+@import '../globals/_variables.scss';
+@mixin flex_container($width: 100%, $direction: row, $wrap: nowrap, $justification: center) {
+    width: $width;
+    display: flex;
+    flex-flow: $direction $wrap;
+    justify-content: $justification;
+    align-items: $justification;
+}

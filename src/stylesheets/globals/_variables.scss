@@ -1,0 +1,29 @@
+
+// color map
+$colors: (red:#721c24,green:#28a745, blue:#007bff, primary: #007bff);
+
+// Media queries  map....
+$media_queries: (xs: 576px, sm: 768px, md: 992px, lg: 1200px, xl: 1600px);
+
+// Column List....
+$cols: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12;
+
+
+// containerWidths:
+$container-full: 100%;
+$container:  1200px;
+
+// Header Variables 
+$header-background-color: #000;
+$header-container-height: 48px;
+$header-font-size: 14px;
+
+// Footer Variables
+$footer-background-color: #fff;
+$footer-container-height: 40px;
+$footer-font-color: #000;
+$footer-font-size: 12px;
+$footer-border-color: #ddd;
+
+// Btn font-size
+$btn-font-size: 12px; 

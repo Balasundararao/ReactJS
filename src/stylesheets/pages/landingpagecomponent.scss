@@ -1,0 +1,6 @@
+@import '../globals/index.scss';
+.navbar_topsub {
+    display: flex;
+    @include navbars($width: $container, $flx_direction: row, $flx_wrap: wrap, 
+    $justcontent: start, $bgcolor: #fff, $color: #000, $margin: 10px, $padding: 10px, $font-size: $header-font-size);
+}

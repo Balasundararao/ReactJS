@@ -1,0 +1,15 @@
+@import '../globals/variables';
+@import './navigationcomponent';
+
+.header{
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    height: $header-container-height;
+    width: $container-full; 
+    background-color: $header-background-color;
+    .navbar_top, .navbar_topsub {
+        @include navbars($width: $container, $flx_direction: row, $flx_wrap: wrap, 
+        $justcontent: start, $bgcolor: #000, $color: #000, $margin: 10px, $padding: 10px, $font-size: $header-font-size);
+    }
+}

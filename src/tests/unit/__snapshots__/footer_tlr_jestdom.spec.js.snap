@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Matches SnapShot  1`] = `
+<footer
+  className="footer"
+>
+  <div>
+    Copyright © 
+    2020
+     Apple Inc. All rights reserved..
+  </div>
+  <nav
+    className="navbar_bottom"
+  >
+    <ul>
+      <li
+        className="delimeter"
+      >
+        <a
+          alt="crumb"
+          className="abc"
+          href="/compute/support/"
+        >
+          Support
+        </a>
+      </li>
+      <li>
+        <a
+          href="rdar://new/problem/component=ireporter&version=Whistler"
+        >
+          File a Radar 
+        </a>
+      </li>
+    </ul>
+  </nav>
+</footer>
+`;

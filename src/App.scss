@@ -1,0 +1,63 @@
+@import './stylesheets/main_index';
+
+/**
+article{
+  flex-direction: column !important;
+}
+nav{ 
+  display: flex !important;
+  flex-flow: row wrap;
+  border-bottom: 1px solid #ccc;
+}
+nav a{ 
+  margin: 0 5px; 
+  padding: 5px 15px;
+  border-radius: 3px 3px 0 0;
+  background-color: #aaa;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav a:hover, nav a:focus, a:active{
+  color: black;
+  background-color: #aaa;
+  text-decoration:none;
+}
+
+
+
+
+
+form{
+  padding: 10px;
+}
+.form-box{
+  display: flex !important;
+  flex-direction: column;
+  padding:2px;
+}
+select, option, input, label, button{
+  color: inherit;
+  padding:2px;
+  font-size: 12px;
+}
+.form-box input, 
+.form-box select, 
+.form-box textarea{
+  flex-basis: 100%;
+}
+
+.dashboard{
+  display: flex !important;
+  flex-direction: row;
+  margin: 10px 0;
+}
+.db_column1 {
+  flex: 1 1 50%;
+  margin-right: 10px;
+}
+.db_column2 {
+  flex: 1 1 40%;
+}
+
+*/

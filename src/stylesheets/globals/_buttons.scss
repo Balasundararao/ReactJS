@@ -1,0 +1,18 @@
+@import './_variables.scss';
+
+.btn {
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: $btn-font-size;
+    color: #000;
+}
+
+@each $color, $value in $colors{
+    .btn-#{$color} {
+        @extend .btn;
+        background-color: $value;
+    }
+}
+

@@ -1,0 +1,29 @@
+// Configs/globals....
+@import './globals/index.scss';
+
+// components....
+@import './components/footercomponent.scss';
+@import './components/headercomponent.scss';
+@import './components/navigationcomponent.scss';
+
+// pages....
+@import './pages/landingpagecomponent';
+@import './pages/adhoc_page.scss';
+
+// @media(min-width: $container-mobile-width) {
+//     .app_container{
+//         // background-color: blue;
+//     }
+// }
+
+// @media(min-width: $container-ipad-width) {
+//     .app_container{
+//         // background-color: red;
+//     }
+// }
+
+// @media(min-width: $container-desktop-width) {
+//     .app_container{
+//         // background-color: green;
+//     }
+// }

@@ -1,0 +1,23 @@
+@import '../globals/variables';
+@import './navigationcomponent';
+
+.footer {
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: $container-full; 
+    background-color: $footer-background-color;
+    color: $footer-font-color;
+    height: $footer-container-height;
+    font-size: $footer-font-size;
+    border-top:  2px solid $footer-border-color;
+    div{
+      padding: 5px 0 0 0;
+    }
+    .navbar_bottom{
+      @include navbars($width: $container, $flx_direction: row, $flx_wrap: wrap, 
+        $justcontent: center, $bgcolor: #fff, $color: #000, $margin: 0px, $padding: 0px, $font-size: $footer-font-size);
+      ul li a{ padding: 0 10px; }
+    }
+}

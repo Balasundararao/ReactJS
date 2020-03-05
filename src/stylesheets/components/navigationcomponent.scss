@@ -1,0 +1,42 @@
+@import '../globals/_variables';
+@import '../globals/_flexbox';
+
+// Navigation Menu bar:
+@mixin navbars( $width: $container-desktop-width, $flx_direction: row, $flx_wrap: wrap, 
+$justcontent: center, $bgcolor: #fff, $color: #000, $margin: 0px, $padding:0px, $font-size: 12px ) {
+	margin:5px auto;
+    width: $width;
+	background-color: $bgcolor;
+	font-size: $font-size;
+    ul {
+		@include flex_container($width, $flx_direction, $flx_wrap, $justcontent);
+		li{
+			list-style-type: none;
+			padding: $padding 0;
+			margin: 0 $margin;
+			&:hover{
+				border-bottom: 2px solid #3b99fc;
+			}
+			a{
+				text-decoration: none;
+				color: #a4aaad;
+				&:hover, &:focus, &:active{
+					color:  #484856;
+					text-decoration:none;
+				}
+				&.active{
+					padding: 0 0 5px 0;
+				}
+				&:hover{
+					border-bottom: 0px solid #fff;		
+				}
+			}
+			// &.active{
+			// 	border-bottom: 2px solid #3b99fc;	
+			// }
+			&.delimeter{
+				border-right: 1px solid #6d727c;
+			}
+		}
+	}
+}
